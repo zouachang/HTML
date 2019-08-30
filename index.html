@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no">
+    <script>
+        function ds() {
+            let userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            if (/android/i.test(userAgent)) {
+                document.location.href = "https://play.google.com/store/apps/details?id=com.cmcc.cmvideo.miguc";
+            }
+            if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                document.location.href = "https://apps.apple.com/hk/app/miguc/id1457655775";
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/global.css">
+</head>
+
+<body>
+    <div class="page-content">
+
+        <img class="logo" src="img/logo.png">
+
+        <div class="banner">
+            <img src="img/banner.jpg">
+            <ul class="clear">
+                <li>
+                    <img src="img/nbaLogo1.png">
+                    <p>洛杉磯湖人</p>
+                </li>
+                <li>
+                    <img src="img/vs.png">
+                </li>
+                <li>
+                    <img src="img/nbaLogo.png">
+                    <p>布魯克林籃網</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <div class="introduction clear">
+                <a href="rule.html">>> 規則詳情 <<</a> <p class="actTitle titleStyle1">
+                        &nbsp;&nbsp;活動介紹
+                        </p>
+            </div>
+            <div class="actText">
+                <p>9.15-9.25期间，訂購MiguC包月會員，搶當第8/88/168/288/488位VIP，獲兩張<span>NBA中國賽門票專屬大禮</span>（價值￥1600/張），看「聯盟最強」勒邦占士
+                    VS 「德魯大叔」凱里歐文！</p>
+                <p> PS：我們還為籃球迷們準備了更多「觸手可及」的禮物——訂購排名數尾號為0/2/4/6/8的用戶，将加贈價值HK$48/張的<span>MiguC包月會員卡</span>，盡享MiguC全量NBA精彩內容
+                </p>
+            </div>
+            <div class="activitySteps">
+                <p class="actTitle titleStyle2">
+                    &nbsp;&nbsp;活動步骤
+                </p>
+                <ul>
+                    <li>1. 下载MiguC並注册賬戶</li>
+                    <li>2. 訂購MiguC單月會員</li>
+                    <li>3. 用戶進入註冊郵箱/手機查收獲獎信息</li>
+                </ul>
+            </div>
+            <div class="prize">
+                <p class="actTitle titleStyle3">
+                    &nbsp;&nbsp;獎品介紹
+                </p>
+                <img class="ticket" src="img/ticket.png">
+                <p>
+                    2019NBA中國賽深圳站门票
+                    <br><span>價值：￥1600/張</span>
+                </p>
+                <img class="card" src="img/card.jpg">
+                <p>
+                    MiguC包月會員卡
+                    <br><span>價值：HK$48/張</span>
+                </p>
+            </div>
+            <div class="button active" onclick="ds()">
+                <img src="img/bt.png">
+            </div>
+            <a href="miguc://">安卓</a>
+            <a href="miguc://miguc/">dadaada安卓</a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

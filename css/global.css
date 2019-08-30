@@ -1,0 +1,362 @@
+/*general*/
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/** 清除内外边距 **/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+form, fieldset, legend, button, input, textarea, /* form elements 表单元素 */
+th, td /* table elements 表格元素 */ {
+  margin: 0;
+  padding: 0;
+}
+
+html,body{
+  width: 100%;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+  background-color: #e8f0ff;
+  max-width: 680px;
+  margin: auto;
+  position: relative;
+}
+
+body{
+  background-size: 100% 100%;
+  word-break:break-all;
+  font-size: 12px;
+  background-attachment: fixed;
+  font-family: PingFang;
+}
+
+.page-content{
+  width: 100%;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+ul, ol{
+  list-style-type: none;
+}
+
+button, input, select, textarea{
+  -webkit-appearance: none;
+  outline: none;
+  font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif;
+}
+
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{
+  -webkit-appearance:textfield;
+}
+
+input[type="number"]{
+  -moz-appearance:textfield;
+}
+
+button::-moz-focus-inner{
+  border: 0;
+}
+
+img{
+  display:block;
+  margin:0;
+  padding:0;
+  width: 100%;
+}
+
+a{
+  text-decoration:none;
+}
+
+i{
+  font-style: normal;
+}
+
+p{
+  word-wrap:break-word;
+  text-align: justify;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+
+/*font reference*/
+@font-face { 
+  font-family: PingFang;
+  src: url('../font/PingFang Regular.ttf');
+}
+
+.addTable:before{
+  content: "";
+  display: table;
+}
+
+.clear:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.clear{
+  *zoom:1;
+}
+
+/*button active*/
+.active:active{
+  opacity: 0.6;
+}
+
+.active2:active{
+  background-color: #c2a05b;
+}
+
+/*end*/
+
+.logo{
+  position: absolute;
+  top: 16px;
+  right: 4%;
+  width: 18%;
+}
+
+.banner ul{
+  position: relative;
+  z-index: 2;
+  width: 76%;
+  margin-left: 12%;
+  margin-top: -6%;
+}
+
+.banner ul li{
+  float: left;
+  width: 33.33%;
+  
+}
+
+.banner ul li img{
+  width: 86%;
+  margin-left: 7%;
+}
+
+.banner ul li p{
+  text-align: center;
+  line-height: 25px;
+  font-weight: bold;
+  font-family: PingFang;
+  font-size: 11px;
+}
+
+.content{
+  width: 86%;
+  margin-left: 7%;
+  margin-top: 10px;
+}
+
+.introduction{
+  margin: 12px 0;
+}
+
+.introduction a{
+  float: left;
+  color: #3532f9;
+  margin-top: 10px;
+  font-weight: bold;
+  border-bottom: 1px solid #3532f9;
+}
+
+.introduction p{
+  float: right;
+}
+
+.actTitle{
+  line-height: 28px;
+  border-radius: 14px;
+  text-align: center;
+  color: #fff !important;
+  font-weight: bold;
+  width: 114px;
+  font-size: 15px;
+  background-image: url(../img/logo1.png);
+  background-repeat: no-repeat;
+  background-size: 26px 26px;
+  background-position: 1px 1px;
+}
+
+.titleStyle1{
+  background-color: #3360b3
+}
+
+.titleStyle2{
+  background-color: #9b2730
+}
+
+.titleStyle3{
+  background-color: #404040
+}
+
+.actText{
+  background-color: #3360b3;
+  margin-bottom: 20px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 13px;
+}
+
+.actText p:last-child{
+  margin-top: 20px
+}
+
+.actText span{
+  font-size: 16px;
+  color: #efb248;
+  font-weight: bold;
+}
+
+.activitySteps{
+  margin-top: 40px;
+}
+
+.activitySteps p{
+  margin-left: 15px;
+}
+
+.activitySteps li{
+  background-color: #9b2730;
+  margin: 20px 0;
+  font-size: 13px;
+  color: #fff;
+  padding-left: 8px;
+  position: relative;
+  margin-left: 20px;
+  height: 18px;
+  line-height: 18px;
+}
+
+.activitySteps li:before{
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 20px;
+  height: 30px;
+  background-image: url(../img/logo2.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 50% 100%;
+  bottom: 0px;
+  left: -19px;
+}
+
+.activitySteps li:after{
+  position: absolute;
+  display: inline-block;
+  content: "";
+  border-left: 20px solid transparent;
+  border-right: 10px solid #e8f0ff;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  right: -1px;
+  top: -2px;
+}
+
+.activitySteps li:first-child{
+  width: 52%;
+}
+
+.activitySteps li:nth-child(2){
+  width: 67%;
+}
+
+.activitySteps li:last-child{
+  width: 82%;
+}
+
+.prize p{
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.prize .actTitle{
+  position: relative;
+  left: 50%;
+  margin-left: -57px;
+  margin-top: 55px;
+  margin-bottom: 30px;
+}
+
+.prize .ticket{
+  width: 60%;
+  margin-left: 20%;
+  margin-bottom: 10px;
+}
+
+.prize .card{
+  width: 46%;
+  margin: 30px 27% 10px 27%;;
+}
+
+.button{
+  width: 44%;
+  margin: 30px 28% 20px 28%;
+}
+
+.prize span{
+  color: #f25a00;
+}
+
+.bgimg{
+  background-image: url(../img/bg.jpg);
+  background-size: auto 100%;
+  background-position: 50% 50%;
+}
+
+.rule{
+  background-color: rgba(255,255,255,0.6);
+  height: 80%;
+  width: 92%;
+  margin-left: 4%;
+  box-sizing: border-box;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.rule h3{
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 20px;
+  line-height: 36px;
+  font-size: 15px;
+  border-radius: 20px;
+  text-align: center;
+  color: #fff;
+  background-color: #9b2730
+}
+
+.rule p{
+  font-size: 13px;
+  margin-bottom: 20px
+}
+
+.rule div{
+  height: 84%;
+  margin-top: 6%;
+  overflow-y: scroll;
+}
+
+.rule img{
+  position: absolute;
+  bottom: 3%;
+  width: 16px;
+  left: 50%;
+  margin-left: -8px;
+}

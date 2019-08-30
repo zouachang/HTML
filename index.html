@@ -13,10 +13,16 @@
         function ds() {
             let userAgent = navigator.userAgent || navigator.vendor || window.opera;
             if (/android/i.test(userAgent)) {
-                document.location.href = "https://play.google.com/store/apps/details?id=com.cmcc.cmvideo.miguc";
+                location.href = "miguc://miguc/";
+                setInterval(function () {
+                    document.location.href = "https://play.google.com/store/apps/details?id=com.cmcc.cmvideo.miguc";
+                }, 1000);
             }
             if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-                document.location.href = "https://apps.apple.com/hk/app/miguc/id1457655775";
+                location.href = "miguc://miguc/";
+                setInterval(function () {
+                    document.location.href = "https://apps.apple.com/hk/app/miguc/id1457655775";
+                }, 1000);
             }
         }
     </script>
@@ -82,12 +88,11 @@
                     <br><span>價值：HK$48/張</span>
                 </p>
             </div>
-            <div class="button active" onclick="ds()">
-                <img src="img/bt.png">
+            <div class="button active">
+                <a class="applink" onclick="ds()">
+                    <img src="img/bt.png">
+                </a>
             </div>
-            <a href="miguc://">苹果1</a>
-            <a href="miguc://miguc/">苹果2</a>
-            <a href="miguc://miguc/">安卓</a>
         </div>
 
     </div>

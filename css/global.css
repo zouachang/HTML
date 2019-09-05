@@ -120,8 +120,15 @@ p{
 .logo{
   position: absolute;
   top: 16px;
-  right: 4%;
+  left: 4%;
   width: 18%;
+}
+
+.logo1{
+  position: absolute;
+  top: 16px;
+  right: 4%;
+  width: 10%;
 }
 
 .banner ul{

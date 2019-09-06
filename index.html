@@ -11,6 +11,7 @@
     <script>
         function ds() {
             let userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            window.alert(document.cookie);
             if (/android/i.test(userAgent)) {
                 location.href = "miguc://miguc?action={\"type\":\"JUMP_INNER_NEW_PAGE\",\"params\":{\"path\":\"\",\"frameID\":\"\",\"contentID\":\"\",\"location\":\"WEB_VIEW_H5\",\"pageID\":\"028ce88eeebc47cea130bfcadd7a7023\"}}";
                 setTimeout(function () {

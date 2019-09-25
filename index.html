@@ -14,14 +14,14 @@
             if (/android/i.test(userAgent)) {
                 location.href = "miguc://miguc?action={\"type\":\"JUMP_INNER_NEW_PAGE\",\"params\":{\"path\":\"\",\"frameID\":\"\",\"contentID\":\"\",\"location\":\"WEB_VIEW_H5\",\"pageID\":\"028ce88eeebc47cea130bfcadd7a7023\"}}";
                 setTimeout(function () {
-                    document.location.href = "https://play.google.com/store/apps/details?id=com.cmcc.cmvideo.miguc";
+                    document.location.href = "http://bit.ly/miguc_download";
                 }, 1000);
             }
             if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
                 location.href = "miguc://miguc?action={\"type\":\"JUMP_INNER_NEW_PAGE\",\"params\":{\"path\":\"\",\"frameID\":\"\",\"contentID\":\"\",\"location\":\"WEB_VIEW_H5\",\"pageID\":\"MEMBER_CENTER\"}}";
                 // location.href = "miguc://miguc?Action:{name = JUMP_INNER_NEW_PAGE,type = JUMP_INNER_NEW_PAGE,params = {\"frameId\" : \"default-frame\",\"frameID\" : \"default-frame\",\"pageID\" : \"MEMBER_CENTER\",\"extra\" : {\"is_direct_app\" : \"1\",},\"location" : "efcb7b811a864229992d9ebc51684198#7e605584de6642ab95cfd3d8b9bae754#cdab58e12f824834bca16c1cf153fe65",}}”;
                 setTimeout(function () {
-                    document.location.href = "https://apps.apple.com/hk/app/miguc/id1457655775";
+                    document.location.href = "http://bit.ly/miguc_ios_download";
                 }, 1000);
             }
         }
